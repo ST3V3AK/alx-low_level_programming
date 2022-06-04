@@ -7,7 +7,7 @@
  *
  * Prints the 16 hexadecimal numbers
  *
- * return - Always (0) success
+ * Return: Always 0 (Success)
  */
 int main(void)
 {
