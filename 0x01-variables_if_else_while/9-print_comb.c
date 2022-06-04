@@ -1,5 +1,5 @@
-#include <stdlib.h>
-#include <time.h>
+#include <stdlib.h>
+#include <time.h>
 #include <stdio.h>
 
 /**
@@ -7,7 +7,7 @@
  *
  * return - Always (0) success
  */
-int main(void)
+int main(void)
 {
 	int n = 0;
 
