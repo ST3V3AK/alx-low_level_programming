@@ -13,8 +13,8 @@ int main(void)
 
 	while (n < 10)
 	{
-		putchar(n);
-		n++;
+		int putchar(n);
+		++n;
 	}
 	putchar('\n');
 	return (0);
