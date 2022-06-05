@@ -16,12 +16,12 @@ int main(void)
 
 	while (i < 10)
 	{
-		int putchar(i);
+		putchar(i % 10 + '0');
 		++i;
 	}
 	while (n <= 'f')
 	{
-		char putchar(n);
+		putchar(n);
 		++n;
 	}
 	putchar('\n');
