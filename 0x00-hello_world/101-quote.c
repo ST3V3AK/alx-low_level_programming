@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdlib.h>
 
 /**
  * main -Entry point
@@ -11,5 +12,6 @@ int main(void)
 {
 	fprintf(stderr, "and that piece of art is useful\"");
 	fprintf(stderr, " - Dora Korpar, 2015-10-19\n");
+	exit(EXIT_SUCCESS);
 	return (0);
 }
