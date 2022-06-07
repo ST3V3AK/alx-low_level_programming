@@ -30,9 +30,9 @@ int main(void)
 					putchar(',');
 					putchar(' ');
 				}
-			c++ d++;
+			c++; d++;
 			}
-		a++ b++
+		a++; b++;
 		}
 	}
 	putchar('\n');
