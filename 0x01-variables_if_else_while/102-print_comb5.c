@@ -14,26 +14,37 @@ int main(void)
 	int c = 0;
 	int d = 0;
 
-	while (a < 10 && b < 10)
+	while (a < 10)
 	{
-		while (c < 10 && d < 10)
+		while (b < 10)
 		{
-			if (a + b <= c + d  && a + b != c + d)
+			while (c < 10)
 			{
-				putchar(a % 10 + '0');
-				putchar(b % 10 + '0');
-				putchar(' ');
-				putchar(c % 10 + '0');
-				putchar(d % 10 + '0');
-				if (a + b + c != 24)
+				while (d < 10)
 				{
-					putchar(',');
-					putchar(' ');
+					if (a + b < c + d)
+					{
+						putchar(a % 10 + '0');
+						putchar(b % 10 + '0');
+						putchar(' ');
+						putchar(c % 10 + '0');
+						putchar(d % 10 + '0');
+						if (a + b != 17)
+						{
+							putchar(',');
+							putchar(' ');
+						}
+					}
+					d++;
 				}
-			c++; d++;
+				d = 0;
+				c++;
 			}
-		a++; b++;
+			c = 0;
+			b++;
 		}
+		b = 0;
+		a++;
 	}
 	putchar('\n');
 	return (0);
