@@ -22,7 +22,7 @@ int main(void)
 			{
 				while (d < 10)
 				{
-					if (a + b <= c + d)
+					if (a + b <= c + d && a + b != c + d)
 					{
 						putchar(a % 10 + '0');
 						putchar(b % 10 + '0');
