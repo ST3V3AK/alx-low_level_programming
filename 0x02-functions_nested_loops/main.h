@@ -6,9 +6,10 @@
  * Return 0 (Success)
  */
 
-int _putchar(char a)
+void _putchar(char a)
 {	
 	putchar(a);
+	return;
 }
 
-int _putchar(char a);
+void _putchar(char a);
