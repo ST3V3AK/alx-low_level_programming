@@ -6,6 +6,11 @@
  * Return 0 (Success)
  */
 
+int _putchar(char a)                                                 
+{                                                                    
+	putchar(a);
+}
+
 int main (void)
 {
 	void print_alphabet(void);
@@ -19,5 +24,4 @@ int main (void)
 	void times_table(void);
 	int add(int, int);
 	void print_to_98(int n);
-	int _putchar(char);
 }
