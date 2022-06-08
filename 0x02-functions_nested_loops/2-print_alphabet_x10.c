@@ -1,6 +1,6 @@
 #include "main.h"
 
-/*
+/**
  * main - Entry point
  *
  * Prints _putchar
@@ -8,7 +8,7 @@
  * Return: Always 0 (Success)
  */
 
-void print_alphabetx10 (void)
+void print_alphabetx10(void)
 {
 	char i;
 	int n = 0;
