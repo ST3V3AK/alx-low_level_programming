@@ -33,7 +33,7 @@ void print_to_98(int num)
 		n++;
 	}
 
-	while (i => 98)
+	while (i >= 98)
 	{
 		if (i < 0)
 			i = i * -1;
