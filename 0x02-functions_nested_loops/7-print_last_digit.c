@@ -1,17 +1,17 @@
 #include "main.h"
 
-/*
- * main - Entry point
+/**
+ * print_last_digit - Returns the last digit of any number
+ * @n: input number
  *
- * Prints _putchar
- *
- * Return: Always 0 (Success)
+ * Return: last digit of n
  */
 
-int print_last_digit (int)
+int print_last_digit(int n)
 {
 	int unit;
-	unit = int % 10;
+
+	unit = n % 10;
 	if (unit >= 10)
 	{
 		unit = print_last_digit(unit);

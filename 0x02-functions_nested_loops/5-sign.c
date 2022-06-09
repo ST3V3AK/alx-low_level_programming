@@ -1,9 +1,8 @@
 #include "main.h"
 
 /**
- * main - Entry point
- *
- * Prints _putchar
+ * print_sign - Shows if a number is positive or negative
+ * @n: number
  *
  * Return: Always 0 (Success)
  */

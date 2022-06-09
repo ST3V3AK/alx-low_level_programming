@@ -1,11 +1,10 @@
 #include "main.h"
 
 /**
- * main - Entry point
+ * _isalpha - Checks if input is an alphabet
+ * @c: the character to be checked
  *
- * Prints _putchar
- *
- * Return: Always 0 (Success)
+ * Return: 1 if true and 0 if its not
  */
 
 int _isalpha(int c)

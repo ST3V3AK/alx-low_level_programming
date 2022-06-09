@@ -1,17 +1,16 @@
 #include "main.h"
 
-/*
- * main - Entry point
+/**
+ * _abs - returns the absolute value n
+ * @n: input number
  *
- * Prints _putchar
- *
- * Return: Always 0 (Success)
+ * Return: the absolute value of n
  */
 
-int _abs (int)
+int _abs(int n)
 {
-	if (int < 0)
-		return (int * -1);
+	if (n < 0)
+		return (n * -1);
 	else
-		return (int);
+		return (n);
 }

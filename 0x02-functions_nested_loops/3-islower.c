@@ -1,9 +1,10 @@
 #include "main.h"
 
 /**
- * main -Entry point
+ * _islower -Checks if input is an alphabet in lowercase
+ * @c: the input character entered by the user
  *
- * Return: Always 0 (Success)
+ * Return: 1 when true and 0 when false
  */
 
 int _islower(int c)
