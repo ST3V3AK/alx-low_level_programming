@@ -22,27 +22,18 @@ void times_table(void)
 			if (val < 10)
 			{
 				_putchar(val % 10 + '0');
+				_putchar(' ');
+				_putchar(' ');
 			}
-			else
+			else if (val >= 10)
 			{
 				_putchar(val / 10 + '0');
 				_putchar(val % 10 + '0');
-			}
-			if (i <= 9)
-			{
-				_putchar(' ');
-				_putchar(' ');
-				_putchar(',');
-			}
-			else if (i == 9)
-			{
-				_putchar(' ');
 				_putchar(' ');
 			}
-			else 
+			if (i != 9)
 			{
 				_putchar(',');
-				_putchar(' ');
 			}
 			i++;
 		}
