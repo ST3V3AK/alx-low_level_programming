@@ -4,7 +4,7 @@
  * print_sign - Shows if a number is positive or negative
  * @n: number
  *
- * Return: Always 0 (Success)
+ * Return: 1 if positive, 0 if n is equal to zero and -1 if n is negative
  */
 
 int print_sign(int n)
@@ -24,4 +24,5 @@ int print_sign(int n)
 		_putchar('-');
 		return (-1);
 	}
+	return (0);
 }
