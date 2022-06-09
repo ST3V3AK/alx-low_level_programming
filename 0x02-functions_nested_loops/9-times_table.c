@@ -36,7 +36,7 @@ void times_table(void)
 			if ((val < 10) && (i < 9))
 			{
 				_putchar(',');
-				_pitchar(' ');
+				_putchar(' ');
 				_putchar(' ');
 			}
 			i++;
