@@ -21,7 +21,6 @@ void times_table(void)
 			val = n * i;
 			if (val < 10)
 			{
-				_putchar(' ');
 				_putchar(val % 10 + '0');
 			}
 			else
@@ -29,9 +28,16 @@ void times_table(void)
 				_putchar(val / 10 + '0');
 				_putchar(val % 10 + '0');
 			}
-			if (i == 9)
+			if (i <= 9)
+			{
 				_putchar(' ');
-			if (i < 9)
+				_putchar(' ');
+				if (i == 9)
+					continue;
+				_putchar(',');
+					
+			}
+			else 
 			{
 				_putchar(',');
 				_putchar(' ');
