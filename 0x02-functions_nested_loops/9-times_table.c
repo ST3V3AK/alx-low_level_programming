@@ -10,6 +10,7 @@ void times_table(void)
 {
 	int n = 0;
 	int i;
+	int val;
 
 	while (n < 10)
 	{
