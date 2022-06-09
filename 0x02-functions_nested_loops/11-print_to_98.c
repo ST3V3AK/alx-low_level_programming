@@ -13,19 +13,33 @@ void print_to_98(int num)
 
 	while (n <= 98)
 	{
-		_putchar(n / 10 + '0');
-		_putchar(n % 10 + '0');
-		if (n < 98)
+		if (n < 10)
+		{
+			_putchar(n % 10 + '0');
+		}
+		else
+		{
+			_putchar(n / 10 + '0');
+			_putchar(n % 10 + '0');
+		}
+		if (n <  98)
 		{
 			_putchar(',');
 			_putchar(' ');
 		}
 		n++;
 	}
-	if (n > 98)
+	n = num;
+
+	while (n => 98)
 	{
 		_putchar(n / 10 + '0');
 		_putchar(n % 10 + '0');
+		if (n >  98)
+		{
+			_putchar(',');
+			_putchar(' ');
+		}
+		n--;
 	}
-	_putchar('\n');
 }
