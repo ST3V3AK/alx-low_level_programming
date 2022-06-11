@@ -2,6 +2,7 @@
 
 /**
  * _isupper - Checks if char is in upper cases
+ * @c: char to be checkef
  *
  * Return: 1 for success and 0 for failure
  */

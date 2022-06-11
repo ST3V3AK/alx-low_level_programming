@@ -1,26 +1,36 @@
 #include "main.h"
 
 /**
- * print_diagnal - Prints a diagonal depending on input
+ * print_triangle - Prints a triangle
+ * @size: determines age size of the triangle
  *
  * Return: void
  */
 
-void print_diagonal(int n)
+void print_triangle(int size)
 {
-	int j = 0;
+	int j;
+	int n;
 
-	if (n <= 0)
+	if (size <= 0)
 		_putchar('\n');
 
-	for (int i, i <= n, i++)
+	for (int i = 1; i <= size; i++)
 	{
+		j = size - i;
+		n = i;
+
 		while (j > 0)
 		{
 			_putchar(' ');
 			j--;
 		}
-		_putchar(""\"");
+		/*Another while loop*/
+		while (n > 0);
+		{
+			_putchar('#');
+			n--;
+		}
 		_putchar('\n');
 	}
 }

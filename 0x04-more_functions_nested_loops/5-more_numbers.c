@@ -1,17 +1,24 @@
 #include "main.h"
 
 /**
- * print_line -prints a lime
+ * more_numbers- prints 1 to 14 ten times
  *
  * Return: void
  */
 
-void print_line(int c)
+void more_numbers(void)
 {
-	while(n > 0)
+	for (int i = 0; i < 10; i++)
 	{
-		_put char ('_');
-		n--;
+		int n = 0;
+
+		while (n < 14)
+		{
+			if (n >= 10)
+				_putchar(n / 10 + '0');
+			_putchar(n % 10 + '0');
+			n++;
+		}
+		_putchar('\n');
 	}
-	_putchar ('n');
 }

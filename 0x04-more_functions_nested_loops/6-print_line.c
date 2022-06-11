@@ -1,17 +1,18 @@
 #include "main.h"
 
 /**
- * print_line -prints a lime
+ * print_line -prints a line
+ * @n: the size of line
  *
  * Return: void
  */
 
-void print_line(int c)
+void print_line(int n)
 {
-	while(n > 0)
+	while (n > 0)
 	{
-		_put char ('_');
+		_putchar ('_');
 		n--;
 	}
-	_putchar ('n');
+	_putchar ('\n');
 }
