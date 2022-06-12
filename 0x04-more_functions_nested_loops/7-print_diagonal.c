@@ -9,9 +9,9 @@
 
 void print_diagonal(int n)
 {
-	int i = 1;
+	int i;
 
-	for (i <= n; i++)
+	for (i = 1; i <= n; i++)
 	{
 		int j = i;
 
