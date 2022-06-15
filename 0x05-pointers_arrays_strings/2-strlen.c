@@ -3,13 +3,14 @@
 
 /**
  * _strlen - returns the length of a string
- * @count - stores length of the string
+ * @s: input pointer to string
  *
  * Return: length of string
  */
 
 int _strlen(char *s)
 {
-	int count = strlen(*s);
+	int count = strlen(s);
+
 	return (count);
 }

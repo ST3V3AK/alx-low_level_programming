@@ -1,22 +1,23 @@
 #include "main.h"
 
 /**
- * puts2lf - Prints half of a string
- * @msg: stores the inout string
- * @n: stores the length of msg
+ * puts_half - Prints half of a string
+ * @s: pointer to string
  *
  * Return: void
  */
 
-void puts2(char *s)
+void puts_half(char *s)
 {
-	char msg[] = *s;
-	int n = _strlen(msg);
+	int n = _strlen(s);
 	int i;
 
 	for (i = n / 2; i < n; i++)
 	{
-		_putchar(msg[i]);
+		if (n % 2 == 0)
+			_putchar(*(s + i));
+		else if (n % 2 == 1)
+			_putchar(*(s + i));
+	}
 	_putchar('\n');
-
 }

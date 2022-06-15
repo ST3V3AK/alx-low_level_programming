@@ -2,28 +2,21 @@
 #include <string.h>
 
 /**
- * rev_string - Prints tge string in reverse
- * @msg1: stores the input string
- * @rev: stores ouput string
- * @n: stores the length of msg
+ * rev_string - Prints thpe string in reverse
+ * @s: pointer to string
  *
  * Return: void
  */
 
-void print_rev(char *s)
+void rev_string(char *s)
 {
-	char msg1[],rev[];
-	msg[] = *s;
-	int n = _strlen(msg);
+	int n = _strlen(s);
 	int i = 0;
 
 	while (n > 0)
 	{
-		rev[i] =  msg[n];
+		*(s + i)  =  *(s + n);
 		n--;
 		i++;
 	}
-	*s = rev;
-	_putchar('\n');
-
 }

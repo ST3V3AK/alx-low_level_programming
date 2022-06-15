@@ -2,17 +2,17 @@
 
 /**
  * _puts - prints the string the on terminal
- * @n: stores the length of the string
+ * @str: input pointer to string
  *
  * Return: void
  */
 
 void _puts(char *str)
-{;
-	int n = _strlength(*str);
+{
+	int n = _strlen(str);
 	int i;
 
 	for (i = 0; i < n; i++)
-		_putchar(msg[i]);
+		_putchar(*(str + i));
 	_putchar('\n');
 }

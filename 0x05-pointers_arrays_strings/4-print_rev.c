@@ -1,21 +1,19 @@
 #include "main.h"
 
 /**
- * print_rev - Prints tge string in reverse
- * @msg: stores the inout string
- * @n: stores the length of msg
+ * print_rev - Prints the string in reverse
+ * @str: input pointer to string
  *
  * Return: void
  */
 
 void print_rev(char *str)
 {
-	char msg[] = *str;
-	int n = _strlen(msg);
+	int n = _strlen(str);
 	int i;
 
 	for (i = n; i > 0; i--)
-		_putchar(msg[i]);
+		_putchar(*(str + i));
 	_putchar('\n');
 
 }
