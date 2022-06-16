@@ -4,6 +4,7 @@
 /**
  * print_array - Prints a string depending on the specified length
  * @a: pointer to array
+ * @n: desired length
  *
  * Return: void
  */

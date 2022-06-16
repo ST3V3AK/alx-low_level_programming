@@ -17,7 +17,7 @@ void puts_half(char *s)
 	{
 		if (n % 2 == 0)
 			_putchar(*(s + i));
-		else if (n % 2 == 1)
+		else if (n % 2 == 1 && i < n - 1)
 			_putchar(*(s + i + 1));
 	}
 	_putchar('\n');
