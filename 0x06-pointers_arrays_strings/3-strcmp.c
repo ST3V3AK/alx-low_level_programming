@@ -12,6 +12,7 @@
 int _strcmp(char *s1, char *s2)
 {
 	int val;
+
 	val = strcmp(s1, s2);
 	return (val);
 }

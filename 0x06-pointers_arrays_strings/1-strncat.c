@@ -13,6 +13,7 @@
 char *_strncat(char *dest, char *src, int n)
 {
 	char *new;
+
 	new = strncat(dest, src, n);
 	return (new);
 }
