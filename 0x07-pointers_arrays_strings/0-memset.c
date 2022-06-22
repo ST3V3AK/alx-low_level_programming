@@ -1,4 +1,5 @@
 #include "main.h"
+#include <string.h>
 
 /**
  * _memset - sets the value in a string to the input value
@@ -9,7 +10,7 @@
  * Return: pointer to s
  */
 
-char *_memset(char *s, char b, unsigned int n)
+char *_memset (char *s, char b, unsigned int n)
 {
 	int i;
 
