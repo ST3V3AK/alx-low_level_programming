@@ -8,14 +8,15 @@
  * Return: void
  */
 
-void print_rev_recursion(char *s)
+void _print_rev_recursion(char *s)
 {
 	int n = strlen(s) - 1;
 	char rev;
 
 	rev = *(s + n);
 	if (rev == *s)
+		_putchar('\n');
 		return;
 	_putchar(rev);
-	print_rev_recursion(s - 1);
+	_print_rev_recursion(s - 1);
 }
