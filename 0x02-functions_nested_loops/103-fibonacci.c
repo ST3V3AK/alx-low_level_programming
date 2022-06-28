@@ -18,10 +18,11 @@ int main(void)
 		f1 = f;
 		f += fprev;
 		fprev = f1;
-		if (f % 2 = 0)
+		if (f % 2 == 0)
 			printf("%d", f);
 			if (f + fprev  == 4000000)
 				printf(", ");
 	}
 	printf("\n");
+	return (0);
 }
