@@ -13,7 +13,7 @@ void print_diagonal(int n)
 
 	for (i = 1; i <= n; i++)
 	{
-		int j = i;
+		int j = i - 1;
 
 		while (j > 0)
 		{
