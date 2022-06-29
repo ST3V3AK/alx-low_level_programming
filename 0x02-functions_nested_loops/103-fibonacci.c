@@ -8,6 +8,7 @@
 
 int main(void)
 {
+	unsigned int sum = 0;
 	unsigned int f1;
 	unsigned int f = 1;
 	unsigned int fprev = 0;
@@ -18,12 +19,8 @@ int main(void)
 		f += fprev;
 		fprev = f1;
 		if (f % 2 == 0)
-		{
-			printf("%u", f);
-			if (f + fprev  <= 4000000)
-				printf(", ");
-		}
+			sum += f;
 	}
-	printf("\n");
+	printf("%u\n", sum);
 	return (0);
 }
