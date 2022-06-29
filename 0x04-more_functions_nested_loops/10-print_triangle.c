@@ -16,22 +16,21 @@ void print_triangle(int size)
 	if (size <= 0)
 		_putchar('\n');
 
-	for (i = 0; i <= size; i++)
+	else if (size > 0)
 	{
-		j = size - i;
-		n = i;
+		for (i = 0; i <= size; i++)
+		{
+			n = i;
 
-		while (j > 0)
-		{
-			_putchar(' ');
-			j--;
+			for (j = size - i; j > 0; j--)
+				_putchar(' ');
+			while (n > 0)
+			{
+				_putchar('#');
+				n--;
+			}
+			if (i != size)
+				_putchar('\n');
 		}
-		/*Another while loop*/
-		while (n > 0);
-		{
-			_putchar('#');
-			n--;
-		}
-		_putchar('\n');
 	}
 }
