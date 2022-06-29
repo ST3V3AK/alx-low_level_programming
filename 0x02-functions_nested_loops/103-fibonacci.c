@@ -8,10 +8,9 @@
 
 int main(void)
 {
-	int f1;
-	int i = 0;
-	int f = 1;
-	int fprev = 0;
+	unsigned int f1;
+	unsigned int f = 1;
+	unsigned int fprev = 0;
 
 	while (f <= 4000000)
 	{
@@ -19,9 +18,11 @@ int main(void)
 		f += fprev;
 		fprev = f1;
 		if (f % 2 == 0)
-			printf("%d", f);
-			if (f + fprev  == 4000000)
+		{
+			printf("%u", f);
+			if (f + fprev  <= 4000000)
 				printf(", ");
+		}
 	}
 	printf("\n");
 	return (0);
