@@ -8,16 +8,16 @@
 
 int main(void)
 {
-	unsigned long long int f1;
-	unsigned long long int i = 0;
-	unsigned long long int f = 1;
-	unsigned long long int fprev = 0;
+	unsigned long int f1;
+	unsigned long int i = 0;
+	unsigned long int f = 1;
+	unsigned long int fprev = 0;
 
 	while (i < 98)
 	{
 		f1 = f;
 		f += fprev;
-		printf("%llu", f);
+		printf("%lu", f);
 		fprev = f1;
 		if (i != 97)
 			printf(", ");
