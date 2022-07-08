@@ -1,5 +1,6 @@
 #include "main.h"
 #include <string.h>
+#include <stdio.h>
 
 /**
  * rev_string - Prints thpe string in reverse
@@ -10,16 +11,16 @@
 
 void rev_string(char *s)
 {
-	int n = strlen(s);
+	char *tmp = s;
+	int n = strlen(s) - 1;
 	int i = 0;
 
-	while (n > 0)
+	strcpy(tmp, s);
+	while (n >= 0)
 	{
-		if (s[n] != '\0')
-		{
-			s[i] = s[n];
-			n--;
-		}
+		s[i] = tmp[n];
+		printf("s[%d] = %c, tmp[%d] = %c\n", i, s[i], n, tmp[n]);
+		n--;
 		i++;
 	}
 }

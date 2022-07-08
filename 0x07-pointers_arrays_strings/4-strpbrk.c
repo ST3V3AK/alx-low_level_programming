@@ -11,7 +11,7 @@
 
 char *_strpbrk(char *s, char *accept)
 {
-	char *n = strbrk(s,accept);
+	char *n = strpbrk(s, accept);
 
 	return(n);
 }

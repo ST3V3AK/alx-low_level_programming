@@ -9,7 +9,7 @@
  * Return: a pointer to a character in a string
  */
 
-char *_strchar(char *s, char c)
+char *_strchr(char *s, char c)
 {
 	char *found = NULL;
 	int n = strlen(s);
