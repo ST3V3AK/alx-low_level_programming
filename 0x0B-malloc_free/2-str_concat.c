@@ -13,11 +13,14 @@
 char *str_concat(char *s1, char *s2)
 {
 	char *comb;
-	int i = 0;
-	int j = 0;
-	int n = strlen(s1);
-	int m = strlen(s2);
+	int i = 0, j = 0;
+	int n = 0;
+	int m = 0;
 
+	if (s1 != NULL)
+		n = strlen(s1);
+	if (s2 != NULL)
+		m = strlen(s2);
 	comb = (char *)malloc(sizeof(char) * (n + m));
 	while (i < n)
 	{
