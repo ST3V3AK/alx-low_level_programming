@@ -1,39 +1,49 @@
-#include "main.h"
-#include <string.h>
 #include <stdlib.h>
+#include <string.h>
 
 /**
- * str_concat - combines two strings to form a new string
- * @s1: first string
- * @s2: second string
+ * str_concat - concatenates two strings and saves in a new memory
+ * @s1: string 1
+ * @s2: string 2
  *
- * Return: a pointer to the new string
+ * Return: pointer to new memory.
  */
 
 char *str_concat(char *s1, char *s2)
 {
-	char *comb;
-	int i = 0, j = 0;
-	int n = 0;
+	char *copy;
+	int i = 0;
+	int j = 0;
 	int m = 0;
+	int n = 0;
 
 	if (s1 != NULL)
-		n = strlen(s1);
+	{
+		m = strlen(s1);
+	}
 	if (s2 != NULL)
-		m = strlen(s2);
-	comb = (char *)malloc(sizeof(char) * (n + m));
-	while (i < n)
 	{
-		*(comb + j) = s1[i];
-		j++;
-		i++;
+		n = strlen(s2);
 	}
-	i = 0;
-	while (i < m)
+
+	copy = malloc(sizeof(char) * (n + m + 1));
+	if (copy == NULL)
 	{
-		*(comb + j) = s2[i];
-		j++;
-		i++;
+		return (NULL);
 	}
-	return (comb);
+	else
+	{
+		while (i < m)
+		{
+			*(copy + i) = s1[i];
+			i++;
+		}
+		while (j < n)
+		{
+			*(copy + i) = s2[j];
+			i++;
+			j++;
+		}
+		return (copy);
+	}
 }

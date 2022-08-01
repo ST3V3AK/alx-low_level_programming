@@ -27,6 +27,5 @@ char *_strdup(char *str)
 		for (i = 0; i < n; i++)
 			copy[i] = *(str + i);
 	}
-	printf("%ld\n", sizeof(*copy));
 	return (copy);
 }

@@ -12,7 +12,7 @@ int main(void)
 {
 	char *s;
 
-	s = str_concat("Rahila", NULL);
+	s = str_concat("Zara", " Yahlien");
 	if (s == NULL)
 	{
 		printf("failed\n");
