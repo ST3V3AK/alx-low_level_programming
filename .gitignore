@@ -1,11 +1,12 @@
 #ignore all
 *
+.*.sw*
 
 #unignore all
 !*.*
 
 #unignore all dirs
-
+!*/
 
 #ignore specific files
 _putchar.c
