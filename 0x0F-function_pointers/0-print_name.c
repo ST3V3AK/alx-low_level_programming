@@ -4,12 +4,15 @@
 /**
  * print_name - calls a function that prints a string
  * @name: string
- * @f: pointr to function 
+ * @f: pointr to function
  *
  * Return: void
  */
 
 void print_name(char *name, void (*f)(char *))
 {
-	(*f)(name);
+	if (f && name)
+		(*f)(name);
+	else 
+		putchar('\n');
 }
